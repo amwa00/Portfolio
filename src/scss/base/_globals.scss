@@ -1,0 +1,9 @@
+@use "./variables" as *;
+
+body {
+  background-color: $background;
+}
+
+a {
+  color: $link-color;
+}
