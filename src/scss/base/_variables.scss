@@ -1,3 +1,29 @@
-$background: #fdf3eb;
-$text-color: #1f1d1c;
-$link-color: #1f1d1c;
+// colors
+$background: #f5f0e8;
+$text-color: #2c2520;
+$accent: #c1603a;
+$muted: #9a8f87;
+
+// paddings
+$p-xs: 0.5rem;
+$p-sm: 1rem;
+$p-md: 1.5rem;
+$p-lg: 2rem;
+$p-xl: 3rem;
+
+// margins
+$m-sm: 1rem;
+$m-md: 2rem;
+$m-lg: 3rem;
+
+// general sizings
+$s-xs: 0.5rem;
+$s-sm: 1rem;
+$s-md: 1.5rem;
+$s-lg: 2rem;
+$s-xl: 2.5rem;
+
+// breakpoints
+$bp-sm: 23.4375; // 375px - phones
+$bp-md: 48rem; // 768px - tablets
+$bp-lg: 64rem; // 1024px - desktops

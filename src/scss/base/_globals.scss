@@ -1,9 +1,31 @@
 @use "./variables" as *;
+@use "./mixins" as *;
+
+* {
+  margin: 0;
+}
 
 body {
   background-color: $background;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-  color: $link-color;
+header {
+  margin: $s-sm 0;
+  .nav {
+    gap: $s-lg;
+    @include flex-center;
+
+    a {
+      font-weight: 600;
+      text-transform: lowercase;
+      text-decoration: none;
+      color: $muted;
+      transition: color 0.3s ease;
+      &:hover,
+      .active {
+        color: $accent;
+      }
+    }
+  }
 }
