@@ -1,7 +1,8 @@
 @use "./base/globals";
 
-@use "./sections/about";
-@use "./sections/contact";
+@use "./sections/header";
 @use "./sections/home";
-@use "./sections/projects";
+@use "./sections/about";
 @use "./sections/skills";
+@use "./sections/projects";
+@use "./sections/contact";
