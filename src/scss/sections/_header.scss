@@ -10,7 +10,6 @@ header {
     &__link {
       font-weight: 600;
       text-transform: lowercase;
-      text-decoration: none;
       color: $muted;
       transition: color 0.3s ease;
       &:hover,

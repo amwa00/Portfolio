@@ -1,5 +1,4 @@
-import "./scss/style.scss";
-
+// add active class to nav links
 const navLinks = document.querySelectorAll(".nav__link");
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
