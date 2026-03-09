@@ -1,26 +1,5 @@
 @use "./variables" as *;
-
-// imported google fonts
-.gelasio-heading {
-  font-family: "Gelasio", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.nunito-400 {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.nunito-600 {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
+@use "./mixins" as *;
 
 // general styling
 body {
@@ -30,9 +9,9 @@ body {
 }
 
 h1 {
-  font-size: $fs-heading;
+  @include font-styling($font-heading, $fs-heading, 400);
 }
 
 h2 {
-  font-size: $fs-subheading;
+  @include font-styling($font-body, $fs-subheading, 600);
 }

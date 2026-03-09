@@ -17,8 +17,7 @@ header {
     }
 
     &__link {
-      font-size: $fs-link;
-      font-weight: 600;
+      @include font-styling($font-body, $fs-link, 800);
       text-transform: lowercase;
       color: $muted;
       transition: color 0.3s ease;

@@ -6,6 +6,13 @@
   align-items: center;
 }
 
+@mixin font-styling($f-family, $f-size, $f-weight) {
+  font-family: $f-family;
+  font-size: $f-size;
+  font-weight: $f-weight;
+  font-optical-sizing: auto;
+}
+
 // mixin for responsivity, mobile first approach
 @mixin media-up($breakpoint) {
   @if $breakpoint == small {
