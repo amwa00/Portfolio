@@ -2,10 +2,19 @@
 @use "../base/mixins" as *;
 
 header {
-  margin: $m-md 0;
+  @include media-up(small) {
+    margin: $m-md 0;
+  }
   .nav {
-    gap: $s-lg;
-    @include flex-center;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: none;
+
+    @include media-up(medium) {
+      padding: 0 $p-lg;
+      display: flex;
+      justify-content: space-evenly;
+    }
 
     &__link {
       font-size: $fs-link;

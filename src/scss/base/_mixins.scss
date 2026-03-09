@@ -4,3 +4,20 @@
   display: flex;
   justify-content: center;
 }
+
+// mixin for responsivity, mobile first approach
+@mixin media-up($breakpoint) {
+  @if $breakpoint == small {
+    @media (min-width: $bp-sm) {
+      @content;
+    }
+  } @else if $breakpoint == medium {
+    @media (min-width: $bp-md) {
+      @content;
+    }
+  } @else if $breakpoint == large {
+    @media (min-width: $bp-lg) {
+      @content;
+    }
+  }
+}
