@@ -1,0 +1,10 @@
+@use "../base/variables" as *;
+
+.home {
+  height: 100vh;
+  margin: $m-lg 0;
+
+  &__heading {
+    text-align: center;
+  }
+}

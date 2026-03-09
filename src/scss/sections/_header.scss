@@ -2,12 +2,13 @@
 @use "../base/mixins" as *;
 
 header {
-  margin: $s-sm 0;
+  margin: $m-md 0;
   .nav {
     gap: $s-lg;
     @include flex-center;
 
     &__link {
+      font-size: $fs-link;
       font-weight: 600;
       text-transform: lowercase;
       color: $muted;
