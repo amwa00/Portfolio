@@ -7,14 +7,28 @@
   .hero {
     @include flex-col-center;
 
-    &__image {
+    &__image-wrapper {
       width: 100%;
-      max-width: 1200px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+    &__image {
+      min-width: 900px;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
     }
 
     &__heading {
+      width: 100%;
       text-align: center;
-      letter-spacing: 1rem;
+      letter-spacing: 0.5rem;
+      word-wrap: break-word;
+
+      @include media-up(medium) {
+        letter-spacing: 1rem;
+      }
     }
   }
 }
