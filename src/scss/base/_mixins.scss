@@ -1,8 +1,9 @@
 @use "./variables" as *;
 
-@mixin flex-center {
+@mixin flex-col-center {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 // mixin for responsivity, mobile first approach

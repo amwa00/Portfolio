@@ -2,21 +2,19 @@
 @use "../base/mixins" as *;
 
 .home {
-  height: 100vh;
-  margin: $m-lg 0;
+  margin: $m-xl 0;
 
   .hero {
-    @include flex-center;
-    flex-direction: column;
-    align-items: center;
-
-    &__heading {
-      text-align: center;
-    }
+    @include flex-col-center;
 
     &__image {
       width: 100%;
       max-width: 1200px;
+    }
+
+    &__heading {
+      text-align: center;
+      letter-spacing: 1rem;
     }
   }
 }

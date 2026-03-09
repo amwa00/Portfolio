@@ -7,12 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
   <link rel="stylesheet" href="./src/scss/style.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gelasio:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <!-- nav and logo -->
   <header>
-    <nav class="nav">
+    <nav class="nav nunito-400">
       <a href="#home" class="nav__link active">Home</a>
       <a href="#about" class="nav__link">About</a>
       <a href="#skills" class="nav__link">Skills</a>
@@ -25,17 +30,18 @@
     <!-- home -->
     <section class="home" id="home">
       <div class="hero">
-        <h1 class="hero__heading">Amanda Walles</h1>
         <img class="hero__image" src="./public/Portfolio_Hero_Desk.png" alt="Handdrawn image of desk"></img>
-        <h2 class="hero__tagline"></h2>
-        <p class="hero__description"></p>
+        <h1 class="hero__heading gelasio-heading">Amanda Walles</h1>
+        <!-- maybe get rid of these -->
+        <h2 class="hero__tagline nunito-600">Front end developer</h2>
+        <p class="hero__description nunito-400"></p>
       </div>
 
     </section>
 
     <!-- about-->
-    <section class="about" id="about">
-      <h2 class="about__heading">Get to know me</h2>
+    <section class="about nunito-400" id="about">
+      <h2 class="about__heading nunito-600">Get to know me</h2>
       <div class="about__bio"></div>
 
       <div class="about__photo"></div>
@@ -51,13 +57,13 @@
     </section>
 
     <!-- skills -->
-    <section class="skills" id="skills">
-      <h2 class="skills__heading">My skills</h2>
+    <section class="skills nunito-400" id="skills">
+      <h2 class="skills__heading nunito-600">My skills</h2>
     </section>
 
     <!-- projects -->
-    <section class="projects" id="projects">
-      <h2 class="projects__heading">Projects</h2>
+    <section class="projects nunito-400" id="projects">
+      <h2 class="projects__heading nunito-600">Projects</h2>
       <ul class="projects__list">
         <li class="project">
           <a href="" class="project__card">
@@ -90,9 +96,10 @@
     </section>
 
     <!-- contact -->
-    <section class="contact" id="contact">
-      <h2 class="contact__heading">Get in touch</h2>
-      <p class="contact__text">I'm currently looking for an LIA internship. If you think we'd be a good fit, I'd love to
+    <section class="contact nunito-400" id="contact">
+      <h2 class="contact__heading nunito-600">Get in touch</h2>
+      <p class="contact__text">I'm currently looking for an LIA internship. If you think we'd be a good fit,
+        I'd love to
         hear from you.</p>
       <div class="contact__links">
         <a href="mailto:wallesamanda@gmail.com" class="contact__email">Mail me</a>

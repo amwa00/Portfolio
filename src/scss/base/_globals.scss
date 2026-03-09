@@ -1,5 +1,28 @@
 @use "./variables" as *;
 
+// imported google fonts
+.gelasio-heading {
+  font-family: "Gelasio", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nunito-400 {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nunito-600 {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+// general styling
 body {
   background-color: $background;
   font-family: Arial, Helvetica, sans-serif;
