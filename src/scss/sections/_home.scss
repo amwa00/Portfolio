@@ -30,5 +30,13 @@
         letter-spacing: 1rem;
       }
     }
+
+    &__heading,
+    &__tagline {
+      margin: 0 $m-sm;
+      @include media-up(large) {
+        margin: 0;
+      }
+    }
   }
 }
