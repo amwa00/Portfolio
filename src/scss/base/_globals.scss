@@ -20,13 +20,15 @@ h2 {
   @include font-styling($font-body, $fs-subheading, 600);
 }
 
-h1, h2 {
+h1, 
+h2 {
   color: $accent;
 }
 
 h3,
 h4,
 h5,
-h6 {
+h6, 
+p {
   color: $text-color;
 }

@@ -26,20 +26,52 @@
   }
 
   &__photo {
-    min-width: 200px;
+    flex: 1;
+
     max-width: 400px;
-    width: 70%;
+    width: 100%;
     height: auto;
+
+    border-radius: 10px;
+  }
+
+  &__bio {
+    flex: 2;
+
+    @include media-up(medium) {
+      align-self: flex-start;
+    }
   }
 
   &__facts {
     align-self: flex-start;
+
     display: flex;
     flex-direction: column;
+    
+    gap: $s-xs;
 
     @include media-up(medium) {
+      width: 100%;
       flex-direction: row;
-      align-self: center;
+      justify-content: space-evenly;
+
     }
   }
+}
+
+.about-container {
+  @include flex-col-center;
+
+  @include media-up(medium) {
+    flex-direction: row;
+    gap: $s-md;
+  }
+}
+
+.fact-card {
+  background-color: white;
+  padding: $p-xs $p-md;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #c4b79fb1;
 }
