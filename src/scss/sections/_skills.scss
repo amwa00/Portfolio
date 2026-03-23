@@ -1,0 +1,32 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.skills {
+    margin: $m-xl $m-sm;
+    text-align: center;
+
+    @include flex-col-center;
+
+    @include media-up(medium) {
+        margin: $m-xl $m-lg;
+    }
+
+    &__card {
+        background-color: $text-color;
+        padding: $p-xs $p-md;
+        border-radius: 6px;
+    }
+
+    h3 {
+        color: $background;
+    }
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: $s-xs;
+
+    width: 100%;
+}

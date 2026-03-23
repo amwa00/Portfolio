@@ -3,6 +3,7 @@
 
 .home {
   margin: $m-xl 0;
+  text-align: center;
 
   .hero {
     @include flex-col-center;
