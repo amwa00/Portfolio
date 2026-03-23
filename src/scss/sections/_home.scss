@@ -31,6 +31,11 @@
       }
     }
 
+    &__tagline {
+      color: $accent;
+      @include font-styling($font-body, $fs-subheading, 600);
+    }
+
     &__heading,
     &__tagline {
       margin: 0 $m-sm;
