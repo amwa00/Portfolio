@@ -43,7 +43,7 @@
 
   border: solid $muted 1px;
   border-radius: $s-sm;
-  box-shadow: 0 2px 2px $muted;
+  box-shadow: $shadow;
 
   @include media-up("medium") {
     width: $s-xl;

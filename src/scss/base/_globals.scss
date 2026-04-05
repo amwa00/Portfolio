@@ -16,8 +16,9 @@ h1 {
   @include font-styling($font-heading, clamp(3rem, 5vw, 6rem), 400);
 }
 
-h2 {
-  @include font-styling($font-body, $fs-subheading, 600);
+h2,
+h3 {
+  @include font-styling($font-heading, $fs-subheading, 600);
 }
 
 h1,
@@ -33,8 +34,22 @@ p {
   color: $text-color;
 }
 
+h3 {
+  font-size: $fs-subheading-2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
 .divider-line {
   width: 100%;
   height: 2px;
-  background-color: $muted;
+  background-color: rgba($muted, 0.5);
 }
