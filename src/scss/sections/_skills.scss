@@ -5,16 +5,49 @@
   margin: $m-md $m-sm;
 
   @include media-up(medium) {
-    margin: $m-xl $m-lg;
+    margin: $m-xl $m-lg 0;
+  }
+
+  h3 {
+    margin: $m-xs 0;
+
+    font-family: $font-body;
+    font-weight: 400;
+    text-transform: uppercase;
   }
 
   &__card {
-    @include skill-card-styling;
+    @include flex-col-center;
+    justify-content: space-evenly;
+    text-align: center;
+
+    background-color: white;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    border: solid $muted 1px;
+    border-radius: $s-sm;
+    box-shadow: $shadow;
+
+    @include media-up("medium") {
+      width: 7rem;
+    }
+
+    p {
+      max-width: 100%;
+      font-weight: 600;
+    }
+
+    img {
+      max-width: 100%;
+      width: 40%;
+      aspect-ratio: 1 / 1;
+    }
   }
 }
 
 .card-container {
-  margin: $m-sm 0;
+  margin: 0 0 $m-sm;
   width: 100%;
 
   display: grid;
@@ -23,6 +56,10 @@
 
   @media (max-width: 300px) {
     grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  }
+
+  @include media-up("small") {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   @include media-up("medium") {
@@ -43,6 +80,8 @@
   &__exploring {
     display: flex;
     gap: $s-xs;
+
+    font-size: $fs-sm-text;
   }
 }
 

@@ -11,7 +11,7 @@
   }
 
   @include media-up(large) {
-    margin: $m-lg $m-xl;
+    margin: $m-lg $m-xl 0;
   }
 
   &__heading,
