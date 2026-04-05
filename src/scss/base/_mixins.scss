@@ -29,3 +29,23 @@
     }
   }
 }
+
+@mixin skill-card-styling {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: white;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  border: solid $muted 1px;
+  border-radius: $s-sm;
+  box-shadow: 0 2px 2px $muted;
+
+  @include media-up("medium") {
+    width: $s-xl;
+  }
+}

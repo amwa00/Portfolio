@@ -2,31 +2,67 @@
 @use "../base/mixins" as *;
 
 .skills {
-    margin: $m-xl $m-sm;
-    text-align: center;
+  margin: $m-xl $m-sm;
 
-    @include flex-col-center;
+  @include media-up(medium) {
+    margin: $m-xl $m-lg;
+  }
 
-    @include media-up(medium) {
-        margin: $m-xl $m-lg;
-    }
-
-    &__card {
-        background-color: $text-color;
-        padding: $p-xs $p-md;
-        border-radius: 6px;
-    }
-
-    h3 {
-        color: $background;
-    }
+  &__card {
+    @include skill-card-styling;
+  }
 }
 
 .card-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    row-gap: $s-xs;
+  margin: $m-sm 0;
+  width: 100%;
 
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $s-xs;
+
+  @media (max-width: 300px) {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  }
+
+  @include media-up("medium") {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: $s-xs;
+  }
+}
+
+.efficiency {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: $s-md;
+  margin-bottom: $m-sm;
+
+  &__comfortable,
+  &__learning,
+  &__exploring {
+    display: flex;
+    gap: $s-xs;
+  }
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  .circle-filled,
+  .circle-unfilled {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+
+  .circle-filled {
+    background-color: $accent;
+  }
+
+  .circle-unfilled {
+    background-color: $muted;
+  }
 }
