@@ -2,6 +2,12 @@
 @use "../base/mixins" as *;
 
 header {
+  position: absolute;
+
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+
   @include media-up(small) {
     margin: $m-md 0;
   }

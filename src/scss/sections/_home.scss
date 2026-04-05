@@ -2,11 +2,14 @@
 @use "../base/mixins" as *;
 
 .home {
-  margin: $m-xl 0;
+  margin: 0;
   text-align: center;
+  height: 100vh;
 
   .hero {
     @include flex-col-center;
+    justify-content: center;
+    height: 100%;
 
     &__image-wrapper {
       width: 100%;
