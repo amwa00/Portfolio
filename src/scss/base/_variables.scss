@@ -1,8 +1,24 @@
 // colors
-$background: #f5f0e8;
-$text-color: #2c2520;
-$accent: #c1603a;
-$muted: #9a8f87;
+/* $background: #f5f0e8; */
+/* $text-color: #2c2520; */
+/* $accent: #c1603a; */
+/* $muted: #9a8f87; */
+
+// backgrounds
+$bg-primary: #f0f0f0;
+$bg-secondary: white;
+
+// accents
+$primary: #d47738; // buttons, links, highlights, headings
+$secondary: #60788a; // tags, secondary accents
+
+//text
+$text-primary: #25343d;
+$text-muted: #60788a;
+$text-secondary: #8a8365;
+
+// Muted/dividers
+$muted: #b8b08d;
 
 // paddings
 $p-xs: 0.5rem;

@@ -36,8 +36,8 @@
     }
 
     &__tagline {
-      color: $accent;
-      @include font-styling($font-body, $fs-subheading, 600);
+      color: $text-muted;
+      @include font-styling($font-body, $fs-subheading, 400);
     }
 
     &__heading,

@@ -3,7 +3,7 @@
 
 // general styling
 body {
-  background-color: $background;
+  background-color: $bg-primary;
   font-family: Arial, Helvetica, sans-serif;
   font-size: $fs-text;
 
@@ -23,15 +23,17 @@ h3 {
 
 h1,
 h2 {
-  color: $accent;
+  color: $primary;
 }
 
 h3,
 h4,
 h5,
-h6,
+h6 {
+  color: $text-muted;
+}
 p {
-  color: $text-color;
+  color: $text-primary;
 }
 
 h3 {

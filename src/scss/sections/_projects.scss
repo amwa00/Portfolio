@@ -44,12 +44,12 @@
       @include media-up(medium) {
         display: inline-block;
         padding: $p-xs $p-sm;
-        background-color: $accent;
+        background-color: $primary;
         border-radius: $br-rounded;
 
         //text-transform: capitalize;
         font-weight: 600;
-        color: $background;
+        color: $bg-primary;
 
         transition: transform 0.2s ease;
 
@@ -84,7 +84,7 @@
       justify-content: space-between;
       padding: $p-sm;
 
-      background-color: rgba($color: $text-color, $alpha: 0.95);
+      background-color: rgba($color: $text-primary, $alpha: 0.95);
       opacity: 0;
       transition: opacity 0.5s ease;
     }
@@ -102,7 +102,7 @@
 
     @include media-up(medium) {
       margin: 0;
-      color: $background;
+      color: $bg-primary;
     }
   }
 
@@ -110,7 +110,7 @@
     text-align: left;
 
     @include media-up(medium) {
-      color: $background;
+      color: $bg-primary;
     }
   }
 
@@ -127,8 +127,8 @@
     }
 
     .tag {
-      background-color: $text-color;
-      color: $background;
+      background-color: $text-primary;
+      color: $bg-primary;
       font-weight: 600;
       font-size: $fs-sm-text;
 
@@ -138,8 +138,8 @@
       transition: background-color 0.3s ease;
 
       @include media-up(medium) {
-        background-color: $background;
-        color: $text-color;
+        background-color: $bg-primary;
+        color: $text-primary;
       }
 
       @include media-up(large) {
@@ -147,7 +147,7 @@
       }
 
       &:hover {
-        background-color: $accent;
+        background-color: $primary;
         cursor: default;
       }
     }

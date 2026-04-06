@@ -25,11 +25,11 @@ header {
     &__link {
       @include font-styling($font-body, $fs-link, 800);
       text-transform: lowercase;
-      color: $muted;
+      color: rgba($secondary, 0.7);
       transition: color 0.3s ease;
       &:hover,
       &.active {
-        color: $accent;
+        color: $primary;
       }
     }
   }
