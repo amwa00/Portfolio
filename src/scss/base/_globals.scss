@@ -51,7 +51,7 @@ p {
 }
 
 section {
-  margin: $m-md $m-sm;
+  margin: $m-md $m-md;
   @include media-up(medium) {
     margin: $m-lg $m-lg 0;
   }

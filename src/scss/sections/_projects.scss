@@ -26,6 +26,11 @@
     border-radius: 0;
   }
 
+  &:hover {
+    transform: scale(1.025);
+    box-shadow: $project-shadow;
+  }
+
   &__link {
     display: block;
 

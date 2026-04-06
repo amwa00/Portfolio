@@ -1,8 +1,4 @@
-// colors
-/* $background: #f5f0e8; */
-/* $text-color: #2c2520; */
-/* $accent: #c1603a; */
-/* $muted: #9a8f87; */
+/* Colors */
 
 // backgrounds
 $bg-primary: #f0f0f0;
@@ -17,8 +13,10 @@ $text-primary: #25343d;
 $text-muted: #60788a;
 $text-secondary: #8a8365;
 
-// Muted/dividers
+// muted/dividers
 $muted: #b8b08d;
+
+/* Sizings */
 
 // paddings
 $p-xs: 0.5rem;
@@ -41,24 +39,28 @@ $s-md: 1.5rem;
 $s-lg: 2rem;
 $s-xl: 6rem;
 
+/* Text styling */
+
 // font sizes
 $fs-sm-text: 0.875rem; //14px
 $fs-text: 1rem; // 16px
 $fs-link: 1.25rem; // 20px
 $fs-subheading: 1.5rem; // 24px
 $fs-subheading-2: 1.25rem; // 20px
+
 // fonts
 $font-heading: "Gelasio", serif;
 $font-body: "Nunito", sans-serif;
 
-// breakpoints
+/* Breakpoints */
 $bp-sm: 23.4375rem; // 375px - phones
 $bp-md: 48rem; // 768px - tablets
 $bp-lg: 64rem; // 1024px - desktops
 
-// shadows
+/* Shadows */
 $shadow: 0 2px 2px $muted;
+$project-shadow: 0 2px 4px #00000054;
 
-// border styling
+/* Border styling */
 $border: solid $muted 1px;
 $br-rounded: 999px;

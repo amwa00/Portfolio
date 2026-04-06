@@ -1,0 +1,59 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.contact {
+  @include flex-col-center;
+
+  &__text {
+    margin-bottom: $m-sm;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: $s-xs;
+
+    max-width: 350px;
+    width: 100%;
+
+    @include media-up(medium) {
+      flex-direction: row;
+    }
+
+    .link {
+      flex: 1;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: $s-xs;
+
+      background-color: $bg-secondary;
+      padding: 0.7rem 0;
+
+      border-radius: $br-rounded;
+      border: $border;
+
+      img {
+        max-width: 100%;
+        width: 20px;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .icon-attribution {
+    margin: $m-md 0;
+  }
+}
+
+.icon-link {
+  text-decoration: underline;
+
+  &:hover {
+    color: $text-secondary;
+  }
+}
