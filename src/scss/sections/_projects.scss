@@ -1,0 +1,47 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.projects {
+  margin: $m-md $m-sm;
+
+  @include media-up(medium) {
+    margin: $m-xl $m-lg 0;
+  }
+
+  .project-container {
+    margin: 1rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    ul {
+      display: contents;
+    }
+
+    ul:nth-child(odd) {
+      li:nth-child(1) {
+        grid-column: span 2;
+      }
+      li:nth-child(2) {
+        grid-column: span 1;
+      }
+    }
+
+    ul:nth-child(even) {
+      li:nth-child(1) {
+        grid-column: span 1;
+      }
+      li:nth-child(2) {
+        grid-column: span 2;
+      }
+    }
+
+    .project {
+      background-color: white;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
