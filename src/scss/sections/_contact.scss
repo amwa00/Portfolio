@@ -3,9 +3,13 @@
 
 .contact {
   @include flex-col-center;
+  margin-bottom: $m-md;
+  @include media-up(medium) {
+    margin-bottom: $m-lg;
+  }
 
   &__text {
-    margin-bottom: $m-sm;
+    margin-bottom: $m-md;
   }
 
   &__links {
@@ -16,16 +20,13 @@
     max-width: 350px;
     width: 100%;
 
-    @include media-up(medium) {
-      flex-direction: row;
-    }
-
-    .link {
+    a {
       flex: 1;
 
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
       gap: $s-xs;
 
       background-color: $bg-secondary;
@@ -43,10 +44,17 @@
         transform: scale(1.05);
       }
     }
+
+    @include media-up(medium) {
+      flex-direction: row;
+      gap: $s-md;
+
+      max-width: 600px;
+    }
   }
 
   .icon-attribution {
-    margin: $m-md 0;
+    margin-top: $m-md;
   }
 }
 

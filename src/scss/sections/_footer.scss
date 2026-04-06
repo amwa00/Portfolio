@@ -1,0 +1,48 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.footer {
+  background-color: $text-primary;
+
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: $s-md;
+
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: $s-md 0;
+
+    @include media-up(medium) {
+      justify-content: space-between;
+      flex-direction: row;
+
+      padding-left: $s-xl;
+      padding-right: $s-xl;
+    }
+  }
+
+  &__links {
+    @include flex-col-center;
+    gap: $s-xs;
+
+    @include media-up(medium) {
+      flex-direction: row;
+      align-items: start;
+      gap: $s-sm;
+    }
+
+    a {
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  p,
+  a {
+    color: $bg-primary;
+  }
+}

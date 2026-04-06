@@ -1,9 +1,10 @@
 @use "../base/variables" as *;
 @use "../base/mixins" as *;
-@use "sass:color";
 
 .about {
+  margin-top: 0;
   @include flex-col-center;
+  justify-content: center;
 
   &__heading,
   &__photo,
@@ -37,11 +38,10 @@
 
     width: 100%;
     background-color: $bg-secondary;
-    height: 100%;
-    padding: $p-md $p-md;
+    padding: $s-md $s-md;
 
     border-radius: $s-sm;
-    border: solid $muted 1px;
+    border: $border;
 
     text-align: center;
 
@@ -49,8 +49,7 @@
       flex-direction: row;
       justify-content: space-evenly;
 
-      height: 130px;
-      border-radius: 65px;
+      border-radius: $br-rounded;
     }
   }
 
@@ -60,7 +59,7 @@
     &__description {
       font-size: $fs-sm-text;
       color: $text-secondary;
-      letter-spacing: -3%;
+      letter-spacing: -0.05rem;
     }
   }
 

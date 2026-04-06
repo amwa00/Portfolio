@@ -27,16 +27,16 @@
     &__heading {
       width: 100%;
       text-align: center;
-      letter-spacing: 0.5rem;
+      letter-spacing: $s-xs;
       word-wrap: break-word;
 
       @include media-up(medium) {
-        letter-spacing: 1rem;
+        letter-spacing: $s-sm;
       }
     }
 
     &__tagline {
-      color: $text-muted;
+      color: $secondary;
       @include font-styling($font-body, $fs-subheading, 400);
     }
 

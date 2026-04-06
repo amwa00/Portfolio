@@ -3,9 +3,6 @@
 
 header {
   position: absolute;
-
-  margin: 0 auto;
-  max-width: 1200px;
   width: 100%;
 
   @include media-up(small) {
@@ -17,7 +14,7 @@ header {
     display: none;
 
     @include media-up(medium) {
-      padding: 0 $p-lg;
+      padding: 0 $s-lg;
       display: flex;
       justify-content: space-evenly;
     }
