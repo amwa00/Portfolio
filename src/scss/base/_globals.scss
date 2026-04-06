@@ -50,6 +50,17 @@ p {
   overflow-wrap: break-word;
 }
 
+section {
+  margin: $m-md $m-sm;
+  @include media-up(medium) {
+    margin: $m-lg $m-lg 0;
+  }
+
+  @include media-up(large) {
+    margin: $m-xl $m-lg 0;
+  }
+}
+
 .divider-line {
   width: 100%;
   height: 2px;

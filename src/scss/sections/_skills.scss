@@ -2,12 +2,6 @@
 @use "../base/mixins" as *;
 
 .skills {
-  margin: $m-md $m-sm;
-
-  @include media-up(medium) {
-    margin: $m-xl $m-lg 0;
-  }
-
   h3 {
     margin: $m-xs 0;
 

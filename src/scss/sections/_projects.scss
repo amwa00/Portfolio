@@ -2,15 +2,6 @@
 @use "../base/mixins" as *;
 
 .projects {
-  margin: $m-md $m-sm;
-  @include media-up(medium) {
-    margin: $m-lg $m-lg 0;
-  }
-
-  @include media-up(large) {
-    margin: $m-xl $m-lg 0;
-  }
-
   &__list {
     @include media-up(medium) {
       margin: 1rem 0;
